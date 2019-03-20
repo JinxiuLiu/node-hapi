@@ -4,7 +4,7 @@
   "description": "hapi",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js",
+    "dev": "node_modules/.bin/nodemon app.js",
     "createdb:dev": "node_modules/.bin/sequelize db:create",
     "createdb:prod": "node_modules/.bin/sequelize db:create --env production",
     "createtable": "node_modules/.bin/sequelize db:migrate",

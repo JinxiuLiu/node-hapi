@@ -16,6 +16,7 @@ module.exports = (sequelize, DataTypes) => sequelize.define(
             allowNull: false,
         },
         thumb_url: DataTypes.STRING,
+        views: DataTypes.INTEGER
     },
     {
         tableName: 'goods',
