@@ -21,6 +21,7 @@ module.exports = [
                 {name: 'shops', description: '店铺相关'},
                 {name: 'orders', description: '订单相关'},
                 {name: 'users', description: '用户相关'},
+                {name: 'goods', description: '商品相关'},
             ]
         }
     }
