@@ -4,7 +4,13 @@
   "description": "hapi",
   "main": "app.js",
   "scripts": {
-    "dev": "supervisor app.js",
+    "dev": "nodemon app.js",
+    "createdb:dev": "node_modules/.bin/sequelize db:create",
+    "createdb:prod": "node_modules/.bin/sequelize db:create --env production",
+    "createtable": "node_modules/.bin/sequelize db:migrate",
+    "createtableundo": "node_modules/.bin/sequelize db:migrate:undo:all",
+    "initdata": "node_modules/.bin/sequelize db:seed:all",
+    "initdataundo": "node_modules/.bin/sequelize db:seed:undo:all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -28,6 +34,7 @@
     "vision": "^4.1.1"
   },
   "devDependencies": {
+    "nodemon": "^1.18.10",
     "sequelize-cli": "^5.4.0"
   }
 }
