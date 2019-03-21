@@ -18,10 +18,7 @@ module.exports = {
         allowNull: false,
       },
       thumb_url: Sequelize.STRING,
-      views: {
-        type: DataTypes.INTEGER,
-        autoIncrement: true,
-      },
+      views: Sequelize.INTEGER,
       created_at: Sequelize.DATE,
       updated_at: Sequelize.DATE,
     },

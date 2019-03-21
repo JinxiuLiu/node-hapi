@@ -13,7 +13,6 @@ const config = {
 	timezone: '+08:00' // 时区设置
 };
 const db = {};
-
 let sequelize;
 if (config.use_env_variable) {
 	sequelize = new Sequelize(process.env[config.use_env_variable], config);

@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "node_modules/.bin/nodemon app.js",
+    "initdb": "node_modules/.bin/sequelize init --force",
     "createdb:dev": "node_modules/.bin/sequelize db:create",
     "createdb:prod": "node_modules/.bin/sequelize db:create --env production",
     "createtable": "node_modules/.bin/sequelize db:migrate",
